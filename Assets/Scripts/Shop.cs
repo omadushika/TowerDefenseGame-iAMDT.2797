@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+public TurretBlurprint standardTurret;
+public TurretBlurprint missileLauncher;
+
     BuildManager buildManager;
 
     void Start()
@@ -11,15 +14,15 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseStandardTurret()
+    public void SelectStandardTurret()
     {
         Debug.Log("Standard Turrer Selected");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseMissileLauncher()
+    public void SelectMissileLauncher()
     {
         Debug.Log("Missile Launcher Selected");
-        buildManager.SetTurretToBuild(buildManager.missileLauncherPrefab);
+        buildManager.SelectTurretToBuild(missileLauncher);
     }
 }
