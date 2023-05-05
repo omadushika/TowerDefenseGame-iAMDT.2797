@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 60748876}
   - component: {fileID: 60748875}
   m_Layer: 0
-  m_Name: Cose
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1630,7 +1630,7 @@ GameObject:
   - component: {fileID: 219263357}
   - component: {fileID: 219263356}
   m_Layer: 0
-  m_Name: Cose
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3176,6 +3176,7 @@ MonoBehaviour:
   ui: {fileID: 1654186267}
   upgradeCost: {fileID: 60748875}
   upgradeButton: {fileID: 1571710455}
+  sellAmount: {fileID: 219263356}
 --- !u!1 &584269448
 GameObject:
   m_ObjectHideFlags: 0
@@ -7216,13 +7217,13 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 4385152854594475838, guid: 421c53c258e56404c8dd428c52039272, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 4385152854594475838, guid: c7712cd553ea9244c803e80ae8413acf, type: 3}
+    upgradeCost: 200
   laserBeamer:
     prefab: {fileID: 3642541948260553742, guid: fa96e9431050d694a88a3af8d22e11a0, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 3642541948260553742, guid: 17426dcd3f75af94498b2a7757238abe, type: 3}
+    upgradeCost: 300
 --- !u!1 &1246193934
 GameObject:
   m_ObjectHideFlags: 0
@@ -7645,7 +7646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1339423936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579425918}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1339423936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11151,6 +11164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 3326292424629492019, guid: abbac62225097fe4985d347bae680930, type: 3}
+  sellEffect: {fileID: 4770926700667705610, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
   nodeUI: {fileID: 579425918}
 --- !u!114 &1966783941
 MonoBehaviour:
@@ -11955,3 +11969,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b8fead427c458149ac95a84a109a911, type: 3}
+--- !u!1001 &5397685561491530134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705609, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770926700667705610, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}
+      propertyPath: m_Name
+      value: SellEffect
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52186e1b228e49a44bf7121a97053f23, type: 3}

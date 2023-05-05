@@ -4858,7 +4858,7 @@ GameObject:
   - component: {fileID: 2519568754029524699}
   - component: {fileID: 5866697653663907893}
   m_Layer: 0
-  m_Name: LaserBeamer
+  m_Name: LaserBeamer_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4894,12 +4894,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c4db80affa92e45b935eef37cceadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 20
   bulletPrefab: {fileID: 2470881503046445342, guid: 0e535692fb54bd241af929dd80974014, type: 3}
   fireRate: 1
   useLaser: 1
-  damageOverTime: 30
-  slowPct: 0.5
+  damageOverTime: 35
+  slowPct: 0.7
   lineRenderer: {fileID: 5866697653663907893}
   impactEffect: {fileID: 2184632665777113667}
   impactLight: {fileID: 5270854918390880614}
@@ -4958,20 +4958,29 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.009693146
-        value: 0.5970173
+        time: 0
+        value: 0.6268711
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.7910448
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9245283, g: 0.07240129, b: 0, a: 0.9490196}
+      key0: {r: 0.9529412, g: 1, b: 0, a: 0.9490196}
       key1: {r: 0.7264151, g: 0, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -5067,9 +5076,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0495cfa8544ba864d9dd1d604486fc51, type: 2}
-  - {fileID: 2100000, guid: 1743632cc53b71a4ea0f92f86ab78caf, type: 2}
-  - {fileID: 2100000, guid: 0495cfa8544ba864d9dd1d604486fc51, type: 2}
+  - {fileID: 2100000, guid: 3e2bf088dd293d042aaba8a418da522b, type: 2}
+  - {fileID: 2100000, guid: 8a88912ff2962f74e98a9294a03a733a, type: 2}
+  - {fileID: 2100000, guid: 3e2bf088dd293d042aaba8a418da522b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10021,7 +10030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6459399440194166738}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.34, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3421996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10056,7 +10065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8276277331962520271}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0.4378004, z: 0}
+  m_LocalPosition: {x: -0, y: 0.44, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 63.703358}
   m_ConstrainProportionsScale: 0
   m_Children: []
