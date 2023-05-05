@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-public TurretBlurprint standardTurret;
-public TurretBlurprint missileLauncher;
-public TurretBlurprint laserBeamer;
+public TurretBlueprint standardTurret;
+public TurretBlueprint missileLauncher;
+public TurretBlueprint laserBeamer;
 
     BuildManager buildManager;
 
