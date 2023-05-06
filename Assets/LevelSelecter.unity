@@ -236,6 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 1174199959}
+  levelButtons:
+  - {fileID: 1861368264}
+  - {fileID: 1411023511}
 --- !u!4 &274753988
 Transform:
   m_ObjectHideFlags: 0
@@ -542,6 +545,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7741523496208029198, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
   m_PrefabInstance: {fileID: 1562436062}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1411023511 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2926779916661065329, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
+  m_PrefabInstance: {fileID: 1562436062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1562436062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -932,6 +946,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7741523496208029198, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
   m_PrefabInstance: {fileID: 8368639841970728322}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1861368264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2926779916661065329, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
+  m_PrefabInstance: {fileID: 8368639841970728322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2006702031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053412705}
     m_Modifications:
+    - target: {fileID: 2926779916661065329, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2926779916661065329, guid: 287824b0b7ea54b49a57ded92abcf34c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

@@ -12083,6 +12083,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 400748637}
   timeBetweenWaves: 5
   WaveCountdownText: {fileID: 553323137}
+  gameManager: {fileID: 1966783942}
 --- !u!4 &1966783939
 Transform:
   m_ObjectHideFlags: 0
@@ -12140,6 +12141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 206554600}
+  nextLevel: Level02
+  levelToUnlock: 2
+  sceneFader: {fileID: 4142554721147422579}
 --- !u!114 &1966783943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12929,6 +12933,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5bfb2e5c2d2cea4e8bfd0eb03a39d9e, type: 3}
+--- !u!114 &4142554721147422579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4142554722547366053, guid: f5bfb2e5c2d2cea4e8bfd0eb03a39d9e, type: 3}
+  m_PrefabInstance: {fileID: 4142554721147422578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574468b36c4e6a145b5cb6a92ffc2b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4456810004159599331
 PrefabInstance:
   m_ObjectHideFlags: 0
