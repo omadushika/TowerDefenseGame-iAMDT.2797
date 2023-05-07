@@ -6,8 +6,6 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-
-
     void Awake()
     {
         if (instance != null)
@@ -54,11 +52,10 @@ public class BuildManager : MonoBehaviour
     public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
-        
         DeselectNode();
     }
 
-    public TurretBlueprint GetTurretToBuild()
+    public TurretBlueprint GetTurretToBuild ()
     {
         return turretToBuild;
     }

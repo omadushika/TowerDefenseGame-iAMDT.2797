@@ -9,12 +9,12 @@ public class MainMenu : MonoBehaviour
 
     public SceneFader sceneFader;
 
-    public void Play()
+    public void Play ()
     {
         sceneFader.FadeTo(levelToLoad);
     }
 
-    public void Quit()
+    public void Quit ()
     {
         Debug.Log("Exciting...");
         Application.Quit();

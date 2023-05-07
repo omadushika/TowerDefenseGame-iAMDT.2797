@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Enemy))]
 public class EnemyMovement : MonoBehaviour
 {
-    private Transform traget;
+    private Transform target;
     private int wavepointIndex = 0;
 
     private Enemy enemy;
@@ -14,15 +14,16 @@ public class EnemyMovement : MonoBehaviour
     {
         enemy = GetComponent<Enemy>();
 
-        traget = Waypoints.points[0];
+        target = Waypoints.points[0];
     }
 
     void Update()
     {
-        Vector3 dir = traget.position - transform.position;
+        
+        Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
 
-        if (Vector3.Distance(transform.position, traget.position) <= 0.2f)
+        if (Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
             GetNextWaypoint();
         }
@@ -30,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
     enemy.speed = enemy.startSpeed;
 
     }
+
     void GetNextWaypoint()
     {
         if (wavepointIndex >= Waypoints.points.Length - 1)
@@ -39,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
         }
 
         wavepointIndex++;
-        traget = Waypoints.points[wavepointIndex];
+        target = Waypoints.points[wavepointIndex];
     }
 
     void EndPath()

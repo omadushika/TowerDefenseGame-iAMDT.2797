@@ -18,8 +18,7 @@ public class Bullet : MonoBehaviour
         target = _target;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update ()
     {
         if (target == null)
         {
@@ -41,7 +40,7 @@ public class Bullet : MonoBehaviour
 
     }
 
-    void HitTarget()
+    void HitTarget ()
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5f);
@@ -58,7 +57,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Explode()
+    void Explode ()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider collider in colliders)
