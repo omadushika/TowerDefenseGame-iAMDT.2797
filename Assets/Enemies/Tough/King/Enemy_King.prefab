@@ -420,7 +420,7 @@ MonoBehaviour:
   startSpeed: 5
   speed: 0
   startHealth: 1000
-  worth: 25
+  worth: 150
   deathEffect: {fileID: 1440723631964571219, guid: 0bd49e594f0113747a560a45cd9bfca7, type: 3}
   healthBar: {fileID: 2747852470261799585}
 --- !u!114 &7332511401984841219
